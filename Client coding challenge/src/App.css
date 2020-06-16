@@ -1,0 +1,17 @@
+.navigation {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+@media all and (max-width: 800px) {
+	.navigation {
+		justify-content: space-around;
+	}
+}
+
+@media all and (max-width: 500px) {
+	.navigation {
+		flex-direction: column;
+	}
+}

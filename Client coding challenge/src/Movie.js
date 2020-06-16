@@ -3,9 +3,11 @@ import React from 'react';
 function Movie( props ){
     return(
         <div>
-            {/*
-                Your code goes here
-            */}
+            <h2>{ props.title }</h2>
+            <ul>
+                <li>{ props.year }</li>
+                <li>{ props.rating }</li>
+            </ul>
         </div>
     );
 }
