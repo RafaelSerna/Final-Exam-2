@@ -1,17 +1,17 @@
 import React from 'react';
 
 function MovieForm( props ){
-    const { title, year, rating, onChange, add } = props;
+    const { addQuery, onChange, handleAdd } = props;
     return(
         <div>
             <form>
                 <label> Title: </label>
-                <input type="text" value={ title } onChange={ onChange } />
+                <input type="text" value={ addQuery.title } onChange={ onChange } />
                 <label> Year: </label>
-                <input type="text" value={ year } onChange={ onChange } />
+                <input type="text" value={ addQuery.year } onChange={ onChange } />
                 <label> Rating: </label>
-                <input type="text" value={ rating } onChange={ onChange } />
-                <button onClick={ add }>
+                <input type="text" value={ addQuery.rating } onChange={ onChange } />
+                <button onClick={ handleAdd }>
                     Add
                 </button>
             </form>
